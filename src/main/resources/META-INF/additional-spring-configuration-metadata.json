@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "firestore.projectId",
+      "type": "java.lang.String",
+      "description": "Firestore project ID"
+  }
+] }
