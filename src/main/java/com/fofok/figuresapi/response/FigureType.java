@@ -2,7 +2,7 @@ package com.fofok.figuresapi.response;
 
 public enum FigureType {
 
-    ACTION_FIGURE("action figure"), FUNKO("funko"), NENDOROID("nendoroid");
+    ACTION_FIGURE("action figure"), FUNKO("funko"), NENDOROID("nendoroid"), GASHAPON("gashapon");
 
     private final String stringFigureType;
 

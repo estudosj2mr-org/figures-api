@@ -9,7 +9,6 @@ import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.Firestore;
 import com.google.cloud.firestore.QueryDocumentSnapshot;
 import com.google.cloud.firestore.QuerySnapshot;
-import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,8 +27,6 @@ public class FiguresImpl implements Figure {
 
     @Autowired
     private FirestoreClientCreator firestoreClient;
-
-    private static final Gson GSON = new Gson();
 
     @Override
     public ResponseEntity<List<FigureBody>> getAllFigures(FigureType type) {

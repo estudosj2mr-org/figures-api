@@ -13,6 +13,10 @@
   <br>
 </p>
 
+<p align="center">
+    <img src="https://github.com/estudosj2mr-org/figures-api/actions/workflows/test.yml/badge.svg" alt="Test status" />
+</p>
+
 <hr>
 
 ## Getting started

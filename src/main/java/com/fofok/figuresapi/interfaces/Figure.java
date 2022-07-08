@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
 @Component
 @RequestMapping
+@RestController
 public interface Figure {
 
     @GetMapping(
@@ -45,16 +45,28 @@ public interface Figure {
             @RequestParam(value = "type", defaultValue = "") FigureType type
     );
 
-    @GetMapping("/figure/{id}")
+    @GetMapping(
+            value = "/figure/{id}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
     ResponseEntity<String> getFigureById(@PathVariable("id") String id);
 
-    @PutMapping("/figure/{id}")
+    @PutMapping(
+            value = "/figure/{id}",
+            produces = MediaType.TEXT_PLAIN_VALUE
+    )
     ResponseEntity<String> updateFigureById(@PathVariable("id") String id);
 
-    @PostMapping("/figure/{id}")
+    @PostMapping(
+            value = "/figure/{id}",
+            produces = MediaType.TEXT_PLAIN_VALUE
+    )
     ResponseEntity<String> addFigureById(@PathVariable("id") String id);
 
-    @DeleteMapping("/figure/{id}")
+    @DeleteMapping(
+            value = "/figure/{id}",
+            produces = MediaType.TEXT_PLAIN_VALUE
+    )
     ResponseEntity<String> deleteFigureById(@PathVariable("id") String id);
 
 }
